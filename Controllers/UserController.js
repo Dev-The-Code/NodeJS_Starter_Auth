@@ -33,9 +33,10 @@ exports.signUp = async (req, res, next) => {
                     statusCode: 403
                 })
             }
+
             let notVefiedUserExists = await UserModel.findOne({ $or: [{ email: req.body.email }, { phoneNumber: req.body.phoneNumber }], verified: false });
-            const otp = uuid.v1().split("-")[0].substring(4);
-            // const otpDuration=Date.now()+60*60000;
+            const otp = Math.floor(100000 + Math.random() * 900000);
+            
             if (notVefiedUserExists) {
                 let obj = {
                     otp,

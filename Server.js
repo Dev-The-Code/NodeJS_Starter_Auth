@@ -13,7 +13,6 @@ const corsOptions = {
 // Body Parsing
 app.use(express.json({}));
 
-
 // Resolving CORS Error
 app.use(cors(corsOptions))
 
