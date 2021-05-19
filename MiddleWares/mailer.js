@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 require("dotenv").config({
-    path:"./config.env"
+    path: "./config.env"
 })
 
 const username = process.env.email;
@@ -8,10 +8,10 @@ const password = process.env.password;
 const host = process.env.host;
 const smtp_port = process.env.EMAIL_PORT;
 
-let data={
-    name:"Moin Akhter",
-    email:"moinakhter179@gmail.com",
-    verificationCode:"1234563453"
+let data = {
+    name: "Moin Akhter",
+    email: "moinakhter179@gmail.com",
+    verificationCode: "1234563453"
 }
 
 
