@@ -1,9 +1,9 @@
 const Express = require("express");
-const userController = require("../controllers/user-controller");
-const { Protected } = require("../middleWares/auth");
-const { fileUpload } = require("../middleWares/file-upload");
+const userController = require("../../controllers/user-controller");
+const { Protected } = require("../../middleWares/auth");
+const { fileUpload } = require("../../middleWares/file-upload");
 const { signUpValidations, loginValidations, profileValidations, userProfileUpdateValidation } = require("../Validations/UserValidation");
-const { grantAccess } = require("../middleWares/admin-access");
+const { grantAccess } = require("../../middleWares/admin-access");
 const { check } = require("express-validator");
 
 const Router = Express.Router();
