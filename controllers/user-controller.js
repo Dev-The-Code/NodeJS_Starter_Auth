@@ -1,4 +1,4 @@
-const UserModel = require("../Models/UserModel");
+const UserModel = require("../models/UserModel");
 const { checkValidation, deleteImage } = require("../utils");
 const Bcryptjs = require("bcryptjs");
 const uuid = require("uuid");

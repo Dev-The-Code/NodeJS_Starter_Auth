@@ -1,4 +1,4 @@
-const UserModel = require("../Models/UserModel");
+const UserModel = require("../models/UserModel");
 const jwt = require("jsonwebtoken");
 
 exports.Protected = async (req, res, next) => {
