@@ -1,4 +1,4 @@
-const { app } = require("./Connection");
+const { app } = require("./config/connection");
 const UserRoute = require("./Router/UserRoute");
 const { deleteImage } = require("./utils");
 const express = require("express");
